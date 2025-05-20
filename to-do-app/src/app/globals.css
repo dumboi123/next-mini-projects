@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #ffffff;
+  color: #333;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Theme Dark Mode */
+.dark body {
+  background-color: hsl(222.2, 84%, 4.9%);
+  color: #ffffff;
+  --background-layout: 222.2 84% 4.9%;
+  --border: 217.2 32.6% 17.5%;
+}
