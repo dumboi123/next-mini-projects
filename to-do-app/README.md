@@ -1,3 +1,43 @@
+# To-Do App
+
+A simple to-do list application built with Next.js. Add, edit, and delete your daily tasks with a clean and responsive interface.
+
+## Features
+
+- Add, edit, and delete tasks
+- Mark tasks as completed
+- Responsive design
+
+## Getting Started
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Project Structure
+
+- `app/` - Main application pages and components
+
+## Customization
+
+- Edit `app/page.tsx` or other files in `app/` to customize the UI or logic.
+
+## Deployment
+
+Deploy easily on [Vercel](https://vercel.com/) or any platform supporting Next.js.
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

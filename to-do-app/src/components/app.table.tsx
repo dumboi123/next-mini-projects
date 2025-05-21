@@ -58,6 +58,7 @@ const AppTable = () => {
 
   return (
     <div className="dark:bg-[hsl(var(--background-layout))] h-[calc(100vh-64px)] w-[100%] p-4 rounded-md scroll-pb-16">
+      {/*  */}
       <div className="w-[100%] sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[50%] mx-auto flex flex-col sm:flex-row gap-2 mt-4 items-center">
         <input
           type="text"

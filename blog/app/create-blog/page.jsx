@@ -7,7 +7,7 @@ import Image from "next/image";
 import { isValidImageUrl, handleImageChange } from "@/app/lib/validator";
 const CreateBlog = () => {
   const authorRef = useRef(null);
-  const titleRef = useRef(null);
+  const blogTitleRef = useRef(null);
   const descriptionRef = useRef(null);
 
   // const [choice, setChoice] = useState("");
@@ -44,7 +44,7 @@ const CreateBlog = () => {
     const currentDate = new Date().toLocaleDateString();
     if (
       !authorRef.current.value.trim() ||
-      !titleRef.current.value.trim() ||
+      !blogTitleRef.current.value.trim() ||
       !descriptionRef.current.value.trim() ||
       !imageUrl
     ) {
@@ -58,7 +58,7 @@ const CreateBlog = () => {
       id: newId,
       author: authorRef.current.value,
       date: currentDate,
-      title: titleRef.current.value,
+      title: blogTitleRef.current.value,
       description: descriptionRef.current.value,
       imageUrl: imageUrl,
     };
@@ -96,7 +96,7 @@ const CreateBlog = () => {
           type="text"
           className="form-control mb-2"
           placeholder="Title"
-          ref={titleRef}
+          ref={blogTitleRef}
         />
         <textarea
           className="form-control mb-2"

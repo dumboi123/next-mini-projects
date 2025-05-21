@@ -1,25 +1,48 @@
-Project Dự báo thời tiết - NextJs v14 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Weather Forecast App
+
+A weather forecast application built with Next.js 14. Get current and forecasted weather for any city using the OpenWeatherMap API.
+
+## Features
+
+- Search weather by city name
+- 5-day weather forecast with detailed info
+- Temperature, humidity, wind, sunrise/sunset, and more
+- Internationalization (Vietnamese/English)
+- Responsive design
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```bash
+   npm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Set up your OpenWeatherMap API key in a `.env.local` file:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   ```
+   NEXT_PUBLIC_OPENWEATHER_API_KEY=your_api_key_here
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Project Structure
+
+- `src/app/` - Main application pages and logic
+- `components/` - Reusable UI components
+- `utils/` - Utility functions
+
+## Deployment
+
+Deploy easily on [Vercel](https://vercel.com/) or any platform supporting Next.js.
+
+---
 
 ## Learn More
 
